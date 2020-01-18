@@ -13,11 +13,11 @@ header, footer{
 }
 
 a:visited {
-  color:#e5dfd5;
+  color:#354725;
 }
 
 a:hover {
- color:#354725;
+ color:#2d5157;
   }
 
 footer a:hover {
@@ -41,6 +41,9 @@ main {
 }
 h2 {
   color: #2d5157;
+}
+header h2 {
+  color: #e5dfd5;
 }
 h3 {
   color: #354725;
