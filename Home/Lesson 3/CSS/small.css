@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Bitter:700&display=swap');
+body {
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    color: #191919;
+    background: #EDEDED;
+    font-style: normal;
+}
+
+h1,h2 {
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+    color: #EDEDED;
+    background-color: #1F3240;
+    padding: 1rem;
+}
+
+h2 {
+    background-color: #2D5157;
+    font-size: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+header, footer {
+    background-color: #5DABAF; 
+    padding: 1rem;
+    display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header, nav, main, footer {
+	max-width: 767px;
+    margin: 0 auto;
+}
+ footer{
+     margin: 1em auto;
+ }   
+nav {
+    background-color: #5DABAF; 
+    list-style-type: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 16px 0 16px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+nav ul a {
+    color: #1F3240;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align:center;
+    display: block;
+}
+
+a:visited {
+    color: #191919;
+}
+a:hover {
+    color:#000000;
+    background-color: #EDEDED;
+}
+
+#logo {
+    max-width: 10rem;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section p {
+    margin:0 0 0;
+    padding: 1rem;
+    background-color: #cccccc;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
