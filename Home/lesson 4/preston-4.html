@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Bailey Brazelton Week 4 Preston Idaho Hamburger Menu">
+
+<title>StormLight WeatherPreston Idaho</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="/lesson 4/css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="/lesson 4/css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="/lesson 4/css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="/lesson 4/css/large.css" rel="stylesheet">
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="/Lesson 3/Images/stormlightcolorlogo.png" class="logo">
+
+        <h2>Sharing Light, One Forecast at a Time</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">            
+        <button onclick="toggleMenu()">&#9776; Menu </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li> 
+            <li><a href="#">Storm Center</a></li>   
+            <li><a href="#">Gallery</a></li>        
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Preston, Idaho</h1>
+           <section> 
+           <p> Hero Image with Text</p>
+        </section>
+        <section>
+            <p>5 Day Forecast</p>
+            </section>
+            <section>
+               <p>Article</p>
+            </section>
+
+
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        <section>
+
+            <p>Map</p>
+            </section>            <section> 
+           <p> Contact Information</p>
+        </section>
+
+        <p>&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span id="date"></span> </p>
+    </footer>
+    
+<script src="js/scripts.js">
+getDate();
+</script>
+</body>
+</html>
