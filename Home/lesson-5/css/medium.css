@@ -1,0 +1,56 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+.forecast {
+    display: flex;
+
+}
+.iconImg {
+    max-width: 5rem;
+
+}
+
+
+.forecast {
+    display: inline;
+    margin: 2rem auto;
+    padding: 10px;
+    color: #000;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.forecastTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 0px;
+    background-color: #2D5157;
+    color: #ccc;
+}
+.castDay {
+    border: .25px solid #ccc;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.footContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    padding: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.pageMap {
+    display: inline;
+    width: 20rem;
+}
+.contactInfo p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+} /*end medium */
+

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content=" Preston Idaho Weather Page">
+    <title>StormLight WeatherPreston Idaho</title>
+    <link href="favicon.ico" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" class="logo" alt="Weather Site Logo">
+        <h1>StormLight Weather</h1>
+        <h2>Sharing Light, One Forecast at a Time</h2>
+    </header>
+
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <h1>Preston, Idaho</h1>
+
+        <div class="pageHero">
+            <img src="images/heroImagePreston.jpg" class="heroImg" alt="Picture of Mountians covered in snow">
+            <section class="weatherSum">
+                <p>Currently:
+                    <span> 32°F </span>
+                </p>
+                <p>High:
+                    <span> 44°F </span>
+                </p>
+                <p>Wind Chill:
+                    <span> 22°F</span>
+                </p>
+                <p>Humidity:
+                    <span> 87% </span>
+                </p>
+                <p>Wind Speed:
+                    <span> 20 MPH </span>
+                </p>
+            </section>
+        </div>
+
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <section class="forecastTable">
+                <div class="castDay">
+                    <p>Saturday</p>
+                </div>
+
+                <div class="castDay">
+                    <p>Sunday</p>
+                </div>
+
+                <div class="castDay">
+                    <p>Monday</p>
+                </div>
+
+                <div class="castDay">
+                    <p>Tuesday</p>
+                </div>
+
+                <div class="castDay">
+                    <p>Wednesday</p>
+                </div>
+
+                <div class="castDay">
+                    <img class="iconImg" src="images/cloudy.png" alt="Cloudy Icon">
+                    <p> 44°F</p>
+                </div>
+                <div class="castDay">
+                    <img class="iconImg" src="images/rainy.png" alt="Rainy Icon">
+                    <p> 30°F</p>
+                </div>
+                <div class="castDay">
+                    <img class="iconImg" src="images/snow.png" alt="Snow Icon">
+                    <p> 22°F</p>
+                </div>
+                <div class="castDay">
+                    <img class="iconImg" src="images/snow.png" alt="Snow Icon">
+                    <p> 20°F</p>
+                </div>
+                <div class="castDay">
+                    <img class="iconImg" src="images/snow.png" alt="Snow Icon">
+                    <p> 25°F</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="article" class="clearfix">
+            <section>
+                <img class="imgArt" src="images/preston.jpg" alt="Snowy mountains">
+                <h2>A Day in Preston</h2>
+                <h3>Written by Bailey Brazelton</h3>                
+
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+            </section>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div>
+            <section class="footContact">
+            <img class="pageMap" src="images/prestonMap.jpg" alt="Map of Preston Idaho">
+            <section class="contact">
+            <h3>Contact Information</h3>
+            <p> 151 E 2nd S<br>
+                Preston, ID 83263<br>
+                #208-852-0280<br>
+                contact.stormlightweather.com
+            </p>
+        </section>
+</div>
+        <p>&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span
+                id="date"></span> </p>
+    </footer>
+
+    <script src="js/scripts.js">
+    </script>
+</body>
+
+</html>
