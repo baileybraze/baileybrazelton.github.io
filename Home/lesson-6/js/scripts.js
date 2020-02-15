@@ -35,17 +35,4 @@ window.onload = function getDate(){
 	document.getElementById("date").innerHTML=strDate;
 }
 
-switch (d.getDay()) {
-	case 0:
-	case 1:
-	case 2:
-	case 3:
-	case 4:
-	case 6:
-	   document.getElementById("bannermessage").style.display = "none";
-	   break;
-	case 5:
-	   document.getElementById("bannermessage").style.display = "block";
-	   break;
- }
 

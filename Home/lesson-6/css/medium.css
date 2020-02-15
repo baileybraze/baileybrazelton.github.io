@@ -1,38 +1,33 @@
-
+/* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
 
 .iconImg {
     max-width: 5rem;
+
 }
-.weatherSum {
-    font-size: 12px;
-}
+
 
 .forecast {
     display: inline;
     margin: 2rem auto;
+    padding: 10px;
     color: #000;
     font-style: italic;
     font-size: 1.2rem;
 }
 .forecastTable {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
     grid-gap: 0px;
     background-color: #2D5157;
     color: #ccc;
-
 }
-.castDay, .castTemp {
+.castDay {
     border: .25px solid #ccc;
     font-style: italic;
     font-size: 1.2rem;
-    padding: 10px;
-    justify-content: center;
-}
-.castDay {
-    text-align: center;
+    padding: 5px;
 }
 
 .footContact {
@@ -45,20 +40,12 @@
     font-size: 1.2rem;
 }
 footer img {
-    display: grid;
+    display: flex;
     width: 20rem;
-    margin: auto;
 }
-.contact {
-    margin: auto auto auto 10px;
-}
-
 .contactInfo p {
     font-size: 1rem;
     text-align: left;
-}
-footer {
-    justify-content: center;
 }
 .clearfix{
     overflow: none;
