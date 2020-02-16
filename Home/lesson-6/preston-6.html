@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Fill Me In">
-    <meta name="author" content=" Preston Idaho Weather Page">
-    <title>StormLight WeatherPreston Idaho</title>
-    <link href="/favicon.ico" rel="icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Page">
+    <title>StormLight Weather Preston Idaho</title>
+    <link href="favicon.ico" rel="icon">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
@@ -19,8 +18,8 @@
 
     <header>
         <img src="images/logo.png" class="logo" alt="Weather Site Logo">
-        <h1>StormLight Weather</h1>
-        <h2>Sharing Light, One Forecast at a Time</h2>
+        <div class="headerText"><h1>StormLight Weather</h1>
+        <h2>Sharing Light, One Forecast at a Time</h2></div>
     </header>
 
 
@@ -40,25 +39,32 @@
 
 
     <main>
+        <div id="bannermessage">
+        </div>
         <h1>Preston, Idaho</h1>
 
         <div class="pageHero">
-            <img src="images/heroImagePreston.jpg" class="heroImg" alt="Picture of Mountians covered in snow">
+            <picture>
+                <source srcset="images/800px-medium-hero.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <source srcset="images/1200px-large-hero.jpg" media="(min-width: 65em)">
+                <img class="heroImg" src="images/400px-small-hero.jpg" alt="responsive hero images">
+            </picture>
             <section class="weatherSum">
-                <p>Currently: 
-                    <span>Snowy</span> 
+                <h2>Weather Summary:</h2>
+                <p>Currently:
+                    <span> 32 </span>°F
                 </p>
                 <p>High:
-                    <span id="tempHigh">44</span>°F 
+                    <span id="tempHigh"> 44 </span>°F
                 </p>
-                <p>Wind Chill: 
-                    <span id="windChill"></span>°F
+                <p>Wind Chill:
+                    <span id="windChill"> </span>
                 </p>
-                <p>Humidity: 
-                    <span>87</span>%
+                <p>Humidity:
+                    <span> 87 </span>%
                 </p>
-                <p>Wind Speed: 
-                    <span id="windSpeed">20</span>MPH
+                <p>Wind Speed:
+                    <span id="windSpeed"> 10 </span>MPH
                 </p>
             </section>
         </div>
@@ -67,84 +73,99 @@
             <h3>5 Day Forecast</h3>
             <section class="forecastTable">
                 <div class="castDay">
-                    <p>Saturday</p>
+                    Saturday
                 </div>
 
                 <div class="castDay">
-                    <p>Sunday</p>
+                    Sunday
                 </div>
 
                 <div class="castDay">
-                    <p>Monday</p>
+                    Monday
                 </div>
 
                 <div class="castDay">
-                    <p>Tuesday</p>
+                    Tuesday
                 </div>
 
                 <div class="castDay">
-                    <p>Wednesday</p>
+                    Wednesday
                 </div>
 
-                <div class="castDay">
+                <div class="castTemp">
                     <img class="iconImg" src="images/cloudy.png" alt="Cloudy Icon">
-                    <p> 44°F</p>
+                    44°F
                 </div>
-                <div class="castDay">
+                <div class="castTemp">
                     <img class="iconImg" src="images/rainy.png" alt="Rainy Icon">
-                    <p> 30°F</p>
+                    30°F
                 </div>
-                <div class="castDay">
+                <div class="castTemp">
                     <img class="iconImg" src="images/snow.png" alt="Snow Icon">
-                    <p> 22°F</p>
+                    22°F
                 </div>
-                <div class="castDay">
+                <div class="castTemp">
                     <img class="iconImg" src="images/snow.png" alt="Snow Icon">
-                    <p> 20°F</p>
+                    20°F
                 </div>
-                <div class="castDay">
+                <div class="castTemp">
                     <img class="iconImg" src="images/snow.png" alt="Snow Icon">
-                    <p> 25°F</p>
+                    25°F
                 </div>
             </section>
         </div>
 
-        <div class="article" class="clearfix">
+        <div class="article">
             <section>
                 <img class="imgArt" src="images/preston.jpg" alt="Snowy mountains">
                 <h2>A Day in Preston</h2>
-                <h3>Written by Bailey Brazelton</h3>                
+                <h3>Written by Bailey Brazelton</h3>
 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
 
             </section>
         </div>
-
-
     </main>
-
-
     <footer>
-        <div>
+        <div class="clearfix">
             <section class="footContact">
-            <img class="pageMap" src="images/prestonMap.jpg" alt="Map of Preston Idaho">
-            <section class="contact">
-            <h3>Contact Information</h3>
-            <p> 151 E 2nd S<br>
-                Preston, ID 83263<br>
-                #208-852-0280<br>
-                contact.stormlightweather.com
-            </p>
-        </section>
-</div>
-        <p>&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span
+                <img class="pageMap" src="images/prestonMap.jpg" alt="Map of Preston Idaho">
+                <section class="contact">
+                    <h3>Contact Information</h3>
+                    <p> 151 E 2nd S<br>
+                        Preston, ID 83263<br>
+                        #208-852-0280<br>
+                        contact.stormlightweather.com
+                    </p>
+                </section>
+        </div>
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span
                 id="date"></span> </p>
     </footer>
 
     <script src="js/scripts.js">
     </script>
-    <script src="js/windchill.js">
-    </script>
+        <script src="js/windchill.js">
+        </script>
 </body>
 
 </html>

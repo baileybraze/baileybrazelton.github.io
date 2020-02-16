@@ -33,19 +33,11 @@ window.onload = function getDate(){
 	var curDay = weekday[curDate.getDay()];
 	let strDate = curDay +", " + curDate.getDate() +" "+ curMonth + " "+curDate.getFullYear();
 	document.getElementById("date").innerHTML=strDate;
+	
+	if (curDay == 5){
+	let text = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+	document.getElementById("bannermessage").innerHTML = text;
+}
 }
 
-switch (d.getDay()) {
-	case 0:
-	case 1:
-	case 2:
-	case 3:
-	case 4:
-	case 6:
-	   document.getElementById("bannermessage").style.display = "none";
-	   break;
-	case 5:
-	   document.getElementById("bannermessage").style.display = "block";
-	   break;
- }
 
