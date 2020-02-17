@@ -5,7 +5,7 @@
     max-width: 5rem;
 }
 .weatherSum {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .forecast {
@@ -49,9 +49,6 @@ footer img {
     width: 20rem;
     margin: auto;
 }
-.contact {
-    margin: auto auto auto 10px;
-}
 
 .contactInfo p {
     font-size: 1rem;
@@ -60,8 +57,24 @@ footer img {
 footer {
     justify-content: center;
 }
-.clearfix{
-    overflow: none;
+nav button {
+    display: none;   
 }
+nav ul.hide {
+    display: flex;
+}
+nav ul {
+    margin-left: 2%;
+
+}
+nav ul li {
+    flex: 1 1 auto;
+}
+nav ul li a{
+     border: none;
+     border-right: 1px solid rgba(0,0,0,0.3);
+     padding: .6rem 1rem;
+}
+
 } /*end medium */
 
