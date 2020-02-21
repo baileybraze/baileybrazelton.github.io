@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+picture {
+    display: block;
+    max-width: 300px;
+    background-color:#6cb6bb;
+    margin:.5rem auto;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+    padding: 1rem;
+}
+.meme img[data-src] {
+    filter: blur(.4em);
+}
+
+.meme img {
+    width: 95%;
+    filter: blur(0em);
+    transition: filter 1s;
+    transition-delay: 1s;
+}
