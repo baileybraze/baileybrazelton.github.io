@@ -1,0 +1,87 @@
+
+@media only screen and (min-width: 35rem) {
+
+.iconImg {
+    max-width: 5rem;
+}
+.weatherSum {
+    font-size: 15px;
+}
+
+.forecast {
+    display: inline;
+    margin: 2rem auto;
+    color: #000;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.forecastTable {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 0px;
+    background-color: #2D5157;
+    color: #ccc;
+
+}
+.castDay, .castTemp {
+    border: .25px solid #ccc;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 10px;
+    justify-content: center;
+}
+.castDay {
+    text-align: center;
+}
+.gallery {
+    max-width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+figure figcaption {
+    visibility: hidden;
+}
+.footContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
+    padding: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+footer img {
+    display: grid;
+    width: 20rem;
+    margin: auto;
+}
+
+.contactInfo p {
+    font-size: 1rem;
+    text-align: left;
+}
+footer {
+    justify-content: center;
+}
+nav button {
+    display: none;   
+}
+nav ul.hide {
+    display: flex;
+}
+nav ul {
+    margin-left: 2%;
+
+}
+nav ul li {
+    flex: 1 1 auto;
+}
+nav ul li a{
+     border: none;
+     border-right: 1px solid rgba(0,0,0,0.3);
+     padding: .6rem 1rem;
+}
+
+} /*end medium */
+

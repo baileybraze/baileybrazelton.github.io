@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Bitter:700&display=swap');
+
+body {
+    overflow-x: hidden;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #ededed;
+    color: #191919;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #5dabaf;
+    color: #ededed;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+main {
+    max-width: 95%;
+}
+header {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText {
+    padding-top: .5rem;
+}
+.logo {
+    max-width: 15rem;
+
+}
+#bannermessage {
+    color: #fff;
+    background: radial-gradient(#1f3240, #191919);
+    border: 1px solid #000;
+    padding: 3px;
+    box-shadow: 0 0 30px #000;
+    opacity: .9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+}
+
+/*section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #cccccc;
+    padding: 0.4em;
+    margin: .5rem;
+
+}*/
+
+footer section {
+    color: #191919;
+}
+
+nav button {
+    margin: 0 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #1f3240;
+    text-align: center;
+    font-family: 'Bitter', serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1f3240;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #cccccc;
+    font-family: 'Bitter', serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #1f3240;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #2b2b2b;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.pageHero {
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.heroImg {
+    max-width: 90%;
+    height: auto;
+}
+
+.weatherSum {
+    position: absolute;
+    top: -20px;
+    left: 75px;
+    padding-bottom: 20px;
+    background: radial-gradient(#1f3240, #191919);
+    border: 1px solid #000;
+    padding: 3px;
+    box-shadow: 0 0 30px #000;
+    opacity: .9;
+    font-size: 15px;
+}
+
+.forecast {
+    display: none;
+}
+.article {
+    margin: 3px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+figure figcaption {
+    visibility: hidden;
+}
+
+.imgArt {
+    float: right;
+    align-content: center;
+    margin: 15px;
+    max-height: 20rem;
+    padding: 1em;
+}
+
+footer img {
+    display: none;
+}
+
+.contact {
+    margin: auto;
+    border: 1px solid #000000;
+    padding: 20px;
+    color: #cccccc;
+    background-color: #1f3240;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.contact p {
+    font-size: 1rem;
+    text-align: center;
+
+
+}
+footer {
+    justify-content: center;
+}
+.bottom {
+    background-color: #4c9fa3;
+    padding: 5px;
+
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix{
+    overflow: auto;
+}
