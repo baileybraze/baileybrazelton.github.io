@@ -48,5 +48,9 @@ figure:hover figcaption {
 figure:hover {
     box-shadow: 0 0px 50px black;
 }
+form{
+    max-width: 50%;
+    margin: 0 auto;
 
+}
 }
