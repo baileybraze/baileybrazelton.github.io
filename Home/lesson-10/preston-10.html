@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Page">
+    <title>StormLight Weather Preston Idaho</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" class="logo" alt="Weather Site Logo">
+        <div class="headerText"><h1>StormLight Weather</h1>
+        <h2>Sharing Light, One Forecast at a Time</h2></div>
+    </header>
+
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"><a href="/lesson-9/index.html">Home</a></li>
+            <li class="active"><a href="/lesson-10/preston-10.html.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="/lesson-7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+        <div id="bannermessage">
+        </div>
+        <h1>Preston, Idaho</h1>
+
+        <div class="pageHero">
+            <picture>
+                <source srcset="images/800pxprestonmedium.jpg" media="(min-width: 32.5em) and (max-width:64.99em)">
+                <source srcset="images/1200pxprestonlarge.jpg" media="(min-width: 65em)">
+                <img class="heroImg" src="images/400pxprestonsmall.jpg" alt="responsive hero images">
+            </picture>
+            <section class="weatherSum">
+                <h2>Weather Summary:</h2>
+                <p>Currently:
+                    <span id="current-temp"></span>°F
+                </p>
+                <p>High:
+                    <span id="tempHigh"></span>°F
+                </p>
+                <p>Wind Chill:
+                    <span id="windChill"></span>
+                </p>
+                <p>Humidity:
+                    <span id="humidity"></span>%
+                </p>
+                <p>Wind Speed:
+                    <span id="windSpeed"></span>MPH
+                </p>
+            </section>
+        </div>
+
+        <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <section class="forecastTable">
+
+                <div class="castTemp">
+                    <span id="day1" class="castDay"></span>
+                    <img src="#" alt="" id="icon1" />
+                    <span class="data" id="forecast1">°F</span>
+                </div>
+                <div class="castTemp">
+                    <span id="day2" class="castDay"></span>
+                    <img src="#" alt="" id="icon2" />
+                    <span class="data" id="forecast2">°F</span>
+                </div>
+                <div class="castTemp">
+                    <span id="day3" class="castDay"></span>
+                    <img src="#" alt="" id="icon3" />
+                    <span class="data" id="forecast3">°F</span>
+                </div>
+                <div class="castTemp">
+                    <span id="day4" class="castDay"></span>
+                    <img src="#" alt="" id="icon4" />
+                    <span class="data" id="forecast4">°F</span>
+                </div>
+                <div class="castTemp" >
+                    <span id="day5" class="castDay"></span>
+                    <img src="#" alt="" id="icon5" />
+                    <span class="data" id="forecast5">°F</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="article">
+            <section>
+                <img class="imgArt" src="images/preston.jpg" alt="Snowy mountains">
+                <h2>The 10 Weirdest And Strangest Things That Have Ever Happened In Idaho</h2>
+                <h3>Written by Jennifer from Idaho</h3>
+
+                <p>
+                    Idaho isn’t one of those attention-seeking, overly-dominant states (*cough* Texas…California… *cough*); we tend to like to keep to ourselves and enjoy our state’s bounty in peace and quiet. In fact, to the rest of the country, the mysterious “Potato State” is probably America’s most secretive locale; a place of mountains and valleys…and, you know, something vaguely Iowa-like. Maybe?
+                    Of course, for those who live here, we know that Idaho is not at all midwestern or Iowan or Ohioan or anything in between. But for better or worse, there have been a few rare occasions when Idaho has made its fair share of unusual headlines…just not for the reasons you might expect.<br>
+                    <h3>1. The time aggressive goats shut down an entire trail system.</h3><br>
+                    Take note: Idaho's wilderness areas are not private petting zoos.<br>
+                    In late 2015, the New York Times and just about every other major publication and news outlet in the country nabbed onto the Gem State's now-famous "goat problem." Like many of Idaho's rockiest, tallest mountains, Scotchman Peak in North Idaho is home to large numbers of mountain goats; and, in true wilderness fashion, these aren't your typical bouncing barnyard miniature goats. Nope! Mountain goats are quite huge - anywhere up to 300 pounds, with natural instincts that shouldn't be toyed with.<br>
+                    In September, it was reported that of overly-handsy visitors approaching and/or attempting to feed these wild animals prompted a number of attacks, leading the U.S. Forest Service to close the entire trail network. The temporary closure allowed time for the goats to find other sources of food - rather than expect handouts from humans. No food = no need to charge (so long as you keep your distance, that is).<br>
+                    As an added side note, the traditional mountain goat isn't a goat at all, by definition. It is officially called a "goat-antelope." The more you know.<br>
+                    <h3>2. A sassy entrepreneuer's crazy marketing scheme.</h3><br>
+                    The obtrusive yellow signs that dotted old Highway 30 in the 50s definitely broke up the monotonous sagebrush landscape and entertained motorists, but with only two of them remaining, do you know the full story about Farris the Stinker's infamous "horrible dignified" signs that became an "Only in Idaho" phenomenon?<br>
+                    When "Fearless Farris The Stinker" (Farris Lind) opened his first gas station at the age of 20 and offered prices well below the competition, he was instantly labeled a stinker - a name which stuck and led to his chain's name and memorable skunk logo. The witty, sarcastic, and oddball signs were a successful old-school marketing tactic in their day: Farris's stations quickly grew in popularity, although not as fast as his signs did.<br>
+                    In fact, you're probably familiar with the "Petrified watermelons. Take one home to your mother-in-law" sign near Idaho Falls, but over a dozen others kept popping up in the most unexpected of places. "This Is not sagebrush; you're In Idaho clover," "Don't just sit there, nag your husband," and "Is your clutch slipping? Let us check your rear-end," were just a few of the historic signs... and boy, did they make quite a few national headlines.<br>
+                    <h3>3. The whole "mailing-a-person" fiasco...</h3><br>
+                    The launch of the Parcel Post in 1913 was a welcome service, especially for rural Americans, and the growth of the service was phenomenal in its first few years. During the first six months of operation approximately 300 million parcels were mailed, and as time went on, weight limits continued to increase.<br>
+                    One of the oddest PP packages ever sent was "mailed" from Grangeville to Lewiston - a little over an hour's drive by modern car - on February 19, 1914. The 48.5 pound package was just shy of the recently instated 50 pound limit... but strangely enough, the package also had a name: May Pierstorff, a six year old girl.<br>
+                    May's parents wanted to send their daughter to visit her Lewiston grandparents, but were hesitant to pay the high train fare. Since there were no provisions in the parcel post regulations specifically prohibiting the sending of a person, they decided to "mail" their daughter. And no, May was not boxed up or bubble wrapped for the journey. The postage total was a paltry 53-cents in stamps, which were then attached to May's coat. She traveled the entire distance to Lewiston in the train's mail car and was delivered to her grandmother's home by the mail clerk on duty. Of course, as a result, regulations against mailing people were added to the fine print.<br>
+                    <h3>4. Angry mountain men...</h3><br>
+                    Claude Dallas, a well-known mountain man living off the land in Owyhee County, Idaho, defied state hunting laws by poaching animals. When two Idaho game wardens attempted to arrest him, he killed them, hid the bodies, and went on the run for a few years. After being caught and sentenced, he later escaped and was on the run for another year before being caught yet again. He was released after 22 years for good behavior.<br>
+                   <h3> 5. An illegal wild lion compound that took a dangerous turn…</h3><br>
+                    The average sane person knows that lions, tigers, and bears (oh, my!) belong free in the wild - not locked in a Southeast Idaho backyard compound, run by neglectful and untrained homeowners. And certainly, not one that housed over two dozen of the savannah creatures.<br>
+                    In 1995, dozens of ramshackle cages made up a makeshift hoarding ground in Lava Hot Springs - Ligertown, as it was called. But it was an ordinary, quiet September day when somewhere around 30 full-grown African lions, tigers, and cross-bred ligers burst out of their confines. The shoddy conditions consisted of pallet and chain-link cages, networked together by a series of tunnels and multiple sheds. Horrific living conditions and pages of violations were reported over the years.<br>
+                    Panicked officials closed down the local schools and warned residents to stay inside. While no one was injured or attacked - except for the two compound owners themselves - 15 of the big cats were sadly killed. The police department cited a lack of access to proper tranquilizers and personnel to handle the situation humanely. Meanwhile, five cubs found onsite were transported to a Pocatello shelter.
+                    But the story only gets crazier from there. An unexplained sign at the compound declared: "Ligertown Church of the Guardian Alien. An Equal Opportunity Cult." Multiple dead lions were found strewn by the highway days before.<br>
+                    Find the final 5 at  <a href src="https://www.onlyinyourstate.com/idaho/weirdest-headlines-id/">onlyinyourstate.com</a>
+                    </p>
+
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="clearfix">
+            <section class="footContact">
+                <iframe class=" "src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25273.97152749144!2d-111.89400313110762!3d42.09721594397192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1584592417735!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <section class="contact">
+                    <h3>Contact Information</h3>
+                    <p> 151 E 2nd S<br>
+                        Preston, ID 83263<br>
+                        #208-852-0280<br>
+                        contact.stormlightweather.com
+                    </p>
+                </section>
+        </div>
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span
+                id="date"></span> </p>
+    </footer>
+
+    <script src="js/scripts.js">
+    </script>
+    <script src="js/weatherapi.js">
+    </script>
+    <script src="js/forecast.js">
+    </script>
+    <script src="js/windchill.js">
+    </script>
+</body>
+
+</html>

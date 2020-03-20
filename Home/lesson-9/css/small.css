@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Bitter:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
 
 body {
     max-width: 90%;
@@ -6,13 +6,13 @@ body {
     align-items: center;
     background-color: #ededed;
     color: #191919;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 header,
 footer {
-    background-color: #5dabaf;
+    background-color: #3b8488;
     color: #ededed;
     padding: 5px;
     display: block;
@@ -115,12 +115,14 @@ footer {
     padding: 5px;
 
 }
-.newsHeader {
+.cover, .newsHeader {
     color: #ededed;
     background-color: #4c9fa3;
     padding: 3px;
 }
-
+.cover{
+    margin-top: 15px;
+}
 .cards, .news {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

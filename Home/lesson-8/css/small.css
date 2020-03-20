@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Bitter:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
 
 body {
-    overflow-x: hidden;
+    max-width: 90%;
     margin: 0 auto;
+    align-items: center;
     background-color: #ededed;
     color: #191919;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 header,
 footer {
-    background-color: #5dabaf;
+    background-color: #3b8488;
     color: #ededed;
     padding: 5px;
     display: block;
     text-align: center;
 }
+
 main {
     max-width: 95%;
 }
