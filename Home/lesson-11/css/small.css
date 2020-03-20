@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap');
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #ededed;
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+header,
+footer {
+    background-color: #3b8488;
+    color: #ededed;
+    padding: 5px;
+    display: block;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText {
+    padding-top: .5rem;
+}
+.logo {
+    max-width: 15rem;
+
+}
+#bannermessage {
+    color: #fff;
+    background: radial-gradient(#1f3240, #191919);
+    border: 1px solid #000;
+    padding: 3px;
+    box-shadow: 0 0 30px #000;
+    opacity: .9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+}
+h3{
+    margin-bottom: 0em;
+}
+
+/*section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #cccccc;
+    padding: 0.4em;
+    margin: .5rem;
+
+}*/
+
+footer section {
+    color: #191919;
+}
+
+nav button {
+    margin: 0 0.2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #1f3240;
+    text-align: center;
+    font-family: 'Bitter', serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1f3240;
+}
+
+nav {
+    margin: 0 auto;
+    background-color: #cccccc;
+    font-family: 'Bitter', serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #1f3240;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #2b2b2b;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.pageHero {
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.heroImg {
+    max-width: 90%;
+    height: auto;
+}
+
+.weatherSum {
+    position: absolute;
+    top: -20px;
+    left: 75px;
+    padding-bottom: 20px;
+    background: radial-gradient(#1f3240, #191919);
+    border: 1px solid #000;
+    padding: 3px;
+    box-shadow: 0 0 30px #000;
+    opacity: .9;
+    font-size: 15px;
+}
+
+.forecast {
+    display: none;
+}
+.article {
+    margin: 3px;
+    text-align: left;
+}
+
+.imgArt {
+    float: right;
+    align-content: center;
+    margin: 15px;
+    max-height: 20rem;
+    padding: 1em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+figure figcaption {
+    visibility: hidden;
+}
+
+
+/*-------Form-------*/
+h1 {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    background-color: white;
+}
+
+form fieldset {
+    margin: 2rem 2rem;
+    border: 2px solid #1f3240;
+    padding: 1rem 2%;
+    text-align: left;
+    font-size:20pt;
+}
+
+form legend {
+    color: #4c9fa3;
+    margin: 0 2rem;
+    padding: 0 1rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 2rem;
+    color: #4c9fa3;
+    font-size: 1rem;
+}
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #000;
+    padding: 1rem 0;
+    color: #191919;
+    max-width: 90%;
+
+}
+form label.sbs {
+    display: block;
+    padding: 1rem 0;
+    color: #191919;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #4c9fa3;
+    color: #ededed;
+    padding: 2rem 1.5rem;
+    margin: 2rem 2rem 2%;
+    width: 90%;
+    max-width: 30rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+
+footer img {
+    display: none;
+}
+
+.contact {
+    margin: auto;
+    border: 1px solid #000000;
+    padding: 20px;
+    color: #cccccc;
+    background-color: #1f3240;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.contact p {
+    font-size: 1rem;
+    text-align: center;
+
+
+}
+footer {
+    justify-content: center;
+}
+.bottom {
+    background-color: #4c9fa3;
+    padding: 5px;
+
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix{
+    overflow: auto;
+}
