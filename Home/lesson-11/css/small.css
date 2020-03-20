@@ -235,7 +235,31 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
-
+/* home page*/
+.cover, .newsHeader {
+    color: #ededed;
+    background-color: #4c9fa3;
+    padding: 3px;
+}
+.cover{
+    margin-top: 15px;
+}
+.cards, .news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.news h4{
+color: #206a6e;
+}
+.cards section, .news section{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #cccccc;
+}
+.cards section img, .news section img{
+    width: 100%;
+    height: auto;
+}
 
 
 footer img {
