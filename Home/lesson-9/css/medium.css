@@ -44,7 +44,7 @@
     font-style: italic;
     font-size: 1.2rem;
 }
-footer img {
+footer iframe {
     display: grid;
     width: 20rem;
     margin: auto;
