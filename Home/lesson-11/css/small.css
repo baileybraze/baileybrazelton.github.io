@@ -321,7 +321,8 @@ footer iframe {
 
 footer {
     justify-content: center;
-    font-size: 12px;;
+    font-size: 12px;
+    ;
 }
 
 .bottom {
@@ -329,8 +330,9 @@ footer {
     padding: 5px;
 
 }
+
 /* townpage events*/
-.events{
+.events {
     background: radial-gradient(#1f3240, #191919);
     color: #ededed;
     border: 1px solid #000;
@@ -341,6 +343,7 @@ footer {
     max-width: 700px;
     margin: 0 auto;
 }
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

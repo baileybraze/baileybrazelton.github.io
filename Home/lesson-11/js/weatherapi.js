@@ -44,5 +44,5 @@ fetch(apiURL)
         } else {
             wChill = " N/A"
         }
-        document.getElementById("windChill").textContent= wChill;
+        document.getElementById("windChill").textContent = wChill;
     });

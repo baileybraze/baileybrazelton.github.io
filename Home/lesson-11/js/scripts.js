@@ -1,10 +1,10 @@
 function toggleMenu() {
-document.getElementById("primaryNav").classList.toggle("hide");
+	document.getElementById("primaryNav").classList.toggle("hide");
 }
 
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 
-window.onload = function getDate(){
+window.onload = function getDate() {
 	let curDate = new Date();
 	var weekday = new Array(7);
 	weekday[0] = "Sunday";
@@ -31,15 +31,11 @@ window.onload = function getDate(){
 	var curMonth = month[curDate.getMonth()];
 
 	var curDay = weekday[curDate.getDay()];
-	let strDate = curDay +", " + curDate.getDate() +" "+ curMonth + " "+curDate.getFullYear();
-	document.getElementById("date").innerHTML=strDate;
-	
-	if (curDay == 5){
+	let strDate = curDay + ", " + curDate.getDate() + " " + curMonth + " " + curDate.getFullYear();
+	document.getElementById("date").innerHTML = strDate;
+
+	if (curDay == 5) {
 		let text = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
 		document.getElementById("bannermessage").innerHTML = text;
 	}
 }
-
-
-
-
