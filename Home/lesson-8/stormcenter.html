@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="StormCenter">
-    <title>StormLight Weather Storm Center</title>
+    <meta name="description" content="Gallery Page">
+    <title>StormLight Weather Image Gallery</title>
     <link href="favicon.ico" rel="icon">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small.css" rel="stylesheet">
@@ -18,8 +18,10 @@
 
     <header>
         <img src="images/logo.png" class="logo" alt="Weather Site Logo">
-        <div class="headerText"><h1>StormLight Weather</h1>
-        <h2>Sharing Light, One Forecast at a Time</h2></div>
+        <div class="headerText">
+            <h1>StormLight Weather</h1>
+            <h2>Sharing Light, One Forecast at a Time</h2>
+        </div>
     </header>
 
 
@@ -27,42 +29,63 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776; Menu </button>
         <ul id="primaryNav" class="hide">
-            <li class="liMenu"><a href="index.html">Home</a></li>
-            <li><a href="preston.html">Preston</a></li>
-            <li><a href="soda-springs.html">Soda Springs</a></li>
-            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li class="liMenu"><a href="/index.html">Home</a></li>
+            <li><a href="/lesson-11/preston.html">Preston</a></li>
+            <li><a href="/lesson-11/soda-springs.html">Soda Springs</a></li>
+            <li><a href="/lesson-11/fish-haven.html">Fish Haven</a></li>
             <li class="active"><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/lesson-11/gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
         <h1> Storm Center</h1>
+        <h3>Report storms in your area</h3>
         <form method="get" action="thanks.html">
-    <fieldset>
-        <legend>User Information</legend>
-            <label class="top">Full Name*</label>
+            <fieldset>
+                <legend>User Information</legend>
+                <label class="top">Full Name*</label>
                 <label><input type="text" name="fullname" pattern="[A-z a-z]" minlength="5" required></label>
-            <label class="top">Email</label>
+                <label class="top">Email</label>
                 <label><input type="email" name="email" placeholder="ex: myemail@email.com"></label>
-            <label class="top">Phone Number*</label>
-                <label><input type="tel" name="phone"  required></label>
-            <label class="top">Zip Code*</label>
+                <label class="top">Phone Number*</label>
+                <label><input type="tel" name="phone" required></label>
+                <label class="top">Zip Code*</label>
                 <label><input type="number" name="zipcode" required></label>
-        </fieldset>
-        <fieldset>
-            <legend>Storm Information</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
                 <label class="top">Storm Date</label>
-                    <label><input type="date" name="date" ></label>
+                <label><input type="date" name="date"></label>
                 <label class="top">Storm Type</label>
-                    <label><input list="stormType" name="stormType" ></label>
-                        <datalist id="stormType">
-                            <option value="Flash Flood">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">
-                            <option value="Tornado">
-                        </datalist>
+                <label class="stormType" name="stormType"></label>
+                <select id="stormType">
+                    <option value="">Select One...</option>
+                    <option value="Flash Flood">Flash Flood</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Hurricane">Hurricane</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Tornado">Tornado</option>
+                </select>
+                <label for="severityRange" class="top">Storm Severity &nbsp; <span id="severity">Range 1-10</span>
+                    <input type="range" class="slider" id="severityRange" value="5" min="1" max="10" step="1"
+                        list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
                 <label class="top">Storm Region
                     <select name="region">
                         <option value="">Select Region...</option>
@@ -71,33 +94,33 @@
                         <option value="Fish Haven">Fish Haven</option>
                     </select>
                 </label>
-            <label class="sbs">User In-Danger Level
-                <div>
-                    <input type="radio"
-                     name="Yes" value="Yes">
-                    <label>Yes</label>
-                
-                    <input type="radio"
-                     name="maybe" value="Maybe">
-                    <label >Maybe</label>
-                
-                    <input type="radio"
-                     name="maybe" value="Maybe">
-                    <label >No</label>
-                  </div>
-            </label>
-                
-            <label class="top">Additional Information or Comments</label>
+                <label>User In-Danger Level
+                    <div>
+                        <label class="sbs">
+                            <input type="radio" name="Yes" value="Yes">
+                            Yes</label>
+
+                        <label class="sbs">
+                            <input type="radio" class="sbs" name="maybe" value="Maybe">
+                            Maybe</label>
+
+                        <label class="sbs">
+                            <input type="radio" class="sbs" name="no" value="Maybe">
+                            No</label>
+                    </div>
+                </label>
+
+                <label class="top">Additional Information or Comments</label>
                 <label><textarea name="comments"></textarea>
-        </fieldset>
+            </fieldset>
             <input type="submit" value="Submit Information to Storm Center" class="submitBtn">
-            
+
         </form>
 
     </main>
     <footer>
-        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of Use</a> <span
-                id="date"></span> </p>
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Bailey Brazelton &bull; <a href="#">Terms of
+                Use</a> <span id="date"></span> </p>
     </footer>
 
     <script src="js/scripts.js">
