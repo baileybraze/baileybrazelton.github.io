@@ -19,6 +19,7 @@ fetch(requestURL)
           let avgRain=document.createElement('h3');
           let townEvents=document.createElement('p');
           let image=document.createElement('img');
+          
 
           townName.textContent = town.name;
           townMotto.textContent = town.motto;
@@ -27,13 +28,17 @@ fetch(requestURL)
           image.setAttribute('src', 'images/' + town.photo);
           image.setAttribute('alt', 'Image of ' + town.name);
 
+
           card.appendChild(townName);
           card.appendChild(townMotto);
           card.appendChild(townPop);
           card.appendChild(avgRain);
           card.appendChild(image);
 
+
+
           document.querySelector('.cards').appendChild(card);
+
           break;
           default:
               break;
