@@ -24,7 +24,6 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + townId + 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
         const currentTemp = document.querySelector("#current-temp");
         const highTemp = document.querySelector("#tempHigh");
         const humid = document.querySelector("#humidity");
