@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Page">
+    <title>StormLight Weather Preston Idaho</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" class="logo" alt="Adventure Site Logo">
+        <div class="headerText">
+            <h1>Your Guide to Adventure</h1>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"><a href="index.html">HOME</a></li>
+            <li><a href="guides.html">GUIDES</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Us!</h2>
+        <div class="clearfix">
+            <section class="contact">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22403.738223297714!2d-116.33840448114992!3d45.42008106241247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c55ddc7fd9d5%3A0x835ef2ac6cb8432e!2sRiggins%2C%20ID%2083549!5e0!3m2!1sen!2sus!4v1586240195253!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+                <!--Contact Section-->
+                <div class="address">
+                    <p>Our Address:<br>
+                        1000 S Main St., <br>Riggins, ID </p>
+                </div>
+            </section>
+            <fieldset class="message">
+                <h3>SEND US A MESSAGE!</h3>
+                <label class="top">Full Name*</label>
+                <label><input type="text" name="fullname" pattern="[A-z a-z]" minlength="5" required></label>
+                <label class="top">Email</label>
+                <label><input type="email" name="email" placeholder="ex: myemail@email.com"></label>
+                <label class="top">Comments</label>
+                <textarea name="comments"></textarea>
+                <input type="submit" value="Submit Reservation" class="submitBtn">
+            </fieldset>
+
+        </div>
+    </main>
+    <footer>
+
+
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Salmon River Adventures &bull;
+    </footer>
+
+    <script src="script/script.js">
+    </script>
+    <script src="script/slideshow.js"></script>
+    <script src="script/towninfo.js">
+    </script>
+</body>
+
+</html>

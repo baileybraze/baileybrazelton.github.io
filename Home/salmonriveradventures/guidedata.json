@@ -1,0 +1,28 @@
+{
+    "guides": [
+      {
+        "name": "Paige S.",
+        "photo": "images/paige.jpg",
+        "certLevel": "Swiftwater Boat Operator, SRT-I & SRT-II NFPA Certified",
+        "yearsGuiding": "7",
+        "email": "waterpaige@gmail.com",
+        "bio": "Hey Y'all, I'm Paige! I have been rafting since I was really little and absolutely love everything about it! I've rafted all over the country and in some pretty crazy rapids.I am sure you will love it as much as I do! "
+      },
+      {
+        "name": "Jeremy P.",
+        "photo": "images/jeremy.jpg",
+        "certLevel": "Swiftwater Boat Operator, SRT-I & SRT-II NFPA Certified",
+        "yearsGuiding": "5",
+        "email": "jeremyrafts@gmail.com",
+        "bio": "Hey, I'm Jeremy - Are you ready to go on an adventure?!? I sure am! I love anything that has to do with rafts, camping, and water. I go through 2-3 pairs of hiking and water sandals a year!"
+      },
+      {
+        "name": "Noah L.",
+        "photo": "images/noah.jpg",
+        "certLevel": "Swiftwater Boat Operator, SRT-I & SRT-II NFPA Certified",
+        "yearsGuiding": "10",
+        "email": "noahsark@gmail.com",
+        "bio": "Hi Im Noah, and I love going on adventures! I have been rafting since I was a teenager and became certified to instruct and guide when I was 18. Rafting and being in nature are my passion, and I hope to be able to share that passion with you!"
+      }
+    ]
+  }

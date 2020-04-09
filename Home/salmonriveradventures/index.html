@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Page">
+    <title>StormLight Weather Preston Idaho</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" class="logo" alt="Adventure Site Logo">
+        <div class="headerText">
+            <h1>Your Guide to Adventure</h1>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">MENU &#9776;  </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu, active"><a href="index.html">HOME</a></li>
+            <li><a href="guides.html">GUIDES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <!--image gallery-->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/banner.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/banner2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/banner3.jpg" style="width:100%">
+                </div>
+
+                <!--buttons-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section class="weather">
+            <!--weather-->
+            <div class="actionCall">
+                <a href="reservations.html">Make a Reservation Today!</a>
+            </div>
+            <div>
+                <h2>Today's Weather</h2>
+                <div class="forecast">
+                <h3>Riggins, Idaho</h3>
+                <p>Currently:
+                    <span id="current-temp"></span>°F
+                </p>
+                <p>High:
+                    <span id="tempHigh"></span>°F
+                </p>
+                <p>Humidity:
+                    <span id="humidity"></span>%
+                </p>
+
+            </div>
+            </div>
+        </section>
+            <h2>Adventure Package Options</h2>        
+        <section class="packageOptions">
+            <!--package options-->
+
+            <div class="adv1">
+                    <img src="images/a1.jpg" alt="adventure 1 rafting">
+                <div class="advButton"><h3>ADVENTURE 1</h3>
+                CLICK HERE TO LEARN MORE</div>
+                <p>LENGTH: 1 day- Morning to Mid-Afternoon </p>
+                <p>SKILL LEVEL: Newbie</p>
+                <p>COST: $45/person</p>
+                <p>INCLUDES: <ul>
+                    <li>All equipment</li>
+                <li>light snack</li></ul></p>
+            </div>
+            <div class="adv2">
+                    <img src="images/a2.jpg" alt="adventure 2 rafting">
+                    <div class="advButton"><h3>ADVENTURE 2</h3>
+                    CLICK HERE TO LEARN MORE</div>
+                <p>LENGTH: 1 day-Morning to Night </p>
+                <p>SKILL LEVEL: Moderate</p>
+                <p>COST: $65/person</p>
+                <p>INCLUDES: 
+                    <ul>
+                        <li>All equipment</li>
+                        <li>light snack, lunch, and light dinner</li>
+                        </ul></p>
+            </div>
+            <div class="adv3">
+                    <img src="images/a3.jpg" alt="adventure 3 rafting">
+                    <div class="advButton"><h3>ADVENTURE 3</h3>
+                        CLICK HERE TO LEARN MORE</div>
+                <p>LENGTH: 2 days- Morning to Mid-Afternoon Day 2</p>
+                <p>SKILL LEVEL: Advanced</p>
+                <p>COST: $155 /person</p>
+                <p>INCLUDES: 
+                    <ul>
+                        <li>All equipment for rafting</li> 
+                        <li>3 meals(lunch, breakfast, lunch day 2)</li>
+                    <li>secluded camping location( individuals must bring sleeping bags and personal belongings which will be delivered to
+                    site prior to raft arrival)</li></ul>
+                    ** groups of 6 required for trip** </p>
+            </div>
+        </section>
+        <section class="review">
+            <!--reviews-->
+<h2>Reviews</h2>
+<div class="reviewBox">
+   <div class="stars"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+</div>
+ <div>      
+<h4>Matt S. - Phoenix, AZ</h4>
+<p>We went up to Idaho for a summer trip and decided to use Salmon River Adventures for one of our day adventures. We loved every minute- our guide was great, the equipment was amazing, and so were the views!</p>
+</div>
+</div>
+ </section>
+    </main>
+    <footer>
+
+
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Salmon River Adventures &bull;
+    </footer>
+
+    <script src="script/script.js">
+    </script>
+    <script src="script/slideshow.js"></script>
+    <script src="script/weatherforecast.js">
+    </script>
+</body>
+
+</html>

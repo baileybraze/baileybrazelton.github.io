@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Idaho Weather Page">
+    <title>StormLight Weather Preston Idaho</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" class="logo" alt="Adventure Site Logo">
+        <div class="headerText">
+            <h1>Your Guide to Adventure</h1>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu </button>
+        <ul id="primaryNav" class="hide">
+            <li class="liMenu"><a href="index.html">HOME</a></li>
+            <li class="active"><a href="guides.html">GUIDES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Meet Our River Guides!</h2>        
+        <div class="cards"></div>
+
+
+</main>
+    <footer>
+
+
+        <p class="bottom">&copy; <span id="currentyear"></span> &bull; Salmon River Adventures &bull;
+    </footer>
+
+    <script src="script/script.js">
+    </script>
+    <script src="script/guides.js">
+    </script>
+    <script type="text/javascript" src="guidedata.json"></script>
+</body>
+
+</html>
