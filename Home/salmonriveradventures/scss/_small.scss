@@ -40,14 +40,17 @@ h2 {
   max-height: 50px;
   box-shadow: 0 0 10px #303c6c;
 }
-.forecast{
+
+.forecast {
   border: 1px solid #000;
   box-shadow: 0 0 10px #303c6c;
 }
-.forecast p{
+
+.forecast p {
   margin: 20px;
-padding-left: 30px;
+  padding-left: 30px;
 }
+
 h3 {
   color: #ffffff;
   background-color: #f4976c;
@@ -234,8 +237,9 @@ form {
     border-left: green solid 6px;
   }
 }
+
 .adventform {
-  color:#191919;
+  color: #191919;
   text-align: center;
   max-width: 80%;
   margin: 4rem;
@@ -243,11 +247,13 @@ form {
   ul {
     text-align: center;
     list-style-position: inside;
+  }
+
+  h3 {
+    margin: 0 auto
+  }
 }
-h3{
-  margin: 0 auto
-}
-}
+
 main {
   max-width: 90%;
   margin: 0 auto;
@@ -261,10 +267,12 @@ main {
     justify-content: space-around;
 
   }
+
   iframe {
     max-width: 40rem;
     margin: 2rem;
   }
+
   .address {
     text-align: center;
     margin: 10px;
@@ -276,6 +284,7 @@ main {
     background-color: #ffdb80;
     box-shadow: 0 0 10px #303c6c;
   }
+
   .message {
     margin: 0 auto;
     margin-bottom: 5px;
@@ -331,36 +340,41 @@ main {
     box-shadow: none;
   }
 }
-  .submitBtn {
-    border: none;
-    background-color: #f4976c;
-    color: #ededed;
-    padding: 1.5rem 1.5rem;
-    margin: 1rem;
-    max-width: 20rem;
-    box-shadow: 0 2px 5px #000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-  }
-/*...................................guides page*/
-.cards{
 
-  section{
+.submitBtn {
+  border: none;
+  background-color: #f4976c;
+  color: #ededed;
+  padding: 1.5rem 1.5rem;
+  margin: 1rem;
+  max-width: 20rem;
+  box-shadow: 0 2px 5px #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/*...................................guides page*/
+.cards {
+
+  section {
     box-shadow: 0 2px 5px #000;
     padding: 20px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-bottom: 20px;
     text-align: center;
   }
+
   img {
-    max-width:25%;
+    max-width: 25%;
     padding: 10px;
   }
-  h3{
-   margin: 0 auto;
+
+  h3 {
+    margin: 0 auto;
     max-width: 300px;
   }
 }
+
 /*...................................image gallery*/
 * {
   box-sizing: border-box

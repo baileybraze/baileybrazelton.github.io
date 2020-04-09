@@ -24,46 +24,55 @@ nav ul li a {
     border-right: 1px solid rgba(0, 0, 0, 0.062);
     padding: .6rem 1rem;
 }
-.actionCall{
+
+.actionCall {
     padding: 45px;
 }
-.weather{
+
+.weather {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 15px;
     margin: 0 auto;
     padding: 10px;
 }
-.packageOptions{
+
+.packageOptions {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 15px;
-    img{
+
+    img {
         max-width: 75%
     }
 }
-.review{
-   display: inline;
+
+.review {
+    display: inline;
 
 }
+
 .checked {
     margin: 10px;
     color: #f4976c;
     font-size: 60px;
-  }
-  .reviewBox{
-      display: grid;
-      grid-template-columns: 1fr 3fr;
+}
+
+.reviewBox {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     margin: .5rem;
     padding: 1rem;
     background-color: #b4dfe5;
     box-shadow: 0 0 10px #303c6c;
-  }
-  .stars{
-     align-self: center;
+}
 
-  }
+.stars {
+    align-self: center;
+
+}
